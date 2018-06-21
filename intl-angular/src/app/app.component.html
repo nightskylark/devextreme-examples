@@ -1,5 +1,9 @@
+<dx-select-box
+    [dataSource]="[ 'en', 'ru', 'de' ]"
+    value="en"
+    (valueChange)="updateLocale($event)"></dx-select-box>
 <h1>Grid with Intl date and currency formats</h1>
-<dx-data-grid  
+<dx-data-grid
     [dataSource]="orders">
     <dxi-column 
         dataField="OrderDate" 
